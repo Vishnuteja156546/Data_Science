@@ -1,4 +1,0 @@
-Key Methods to Apply Functions
-apply(): Apply a function along an axis (rows or columns).
-applymap(): Apply a function to every element in the DataFrame.
-map(): Apply a function to a Series.
