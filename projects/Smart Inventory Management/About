@@ -1,0 +1,53 @@
+# 📦 Smart Inventory Management System
+
+A Python-based smart inventory management tool designed for small to mid-sized businesses to efficiently track, manage, and predict inventory needs using analytics.
+
+> 🧠 Built using Python, SQLite, Tkinter, and Predictive Analytics.
+
+---
+
+## 🚀 Features
+
+- ✅ Add new products to inventory
+- 🛒 Record sales with real-time inventory updates
+- 📊 Predict demand based on past 7-day sales data
+- ⚠️ Automatic restocking alerts based on forecast
+- 💻 GUI built using Tkinter for easy interaction
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python** – core programming logic and data analysis
+- **SQLite** – lightweight local database for inventory and sales
+- **Tkinter** – GUI framework for building the user interface
+- **NumPy** – used for calculating moving averages in demand prediction
+
+---
+
+## 🧑‍💻 Team & Roles
+
+This project was developed by a team of 4.  
+**My Role**: *Data Analyst & Backend Integrator*
+
+- Developed the predictive analytics logic for demand forecasting
+- Integrated the SQLite database with backend logic
+- Built sales recording functionality and restocking alert mechanism
+
+---
+
+## 🧾 How It Works
+
+1. **Add Inventory**  
+   Input product name and quantity to add to the stock.
+
+2. **Record Sale**  
+   Provide Product ID and quantity sold. The system updates inventory and logs the sale with the current date.
+
+3. **Check Restock**  
+   Automatically checks if any product is below the predicted demand and shows restocking alerts.
+
+4. **Demand Forecasting**  
+   - Uses average sales of the last 7 days.
+   - Adds a 20% buffer to avoid understocking.
+   - Formula: `predicted = avg_last_7_days * 1.2`
