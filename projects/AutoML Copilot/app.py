@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+
 from eda import basic_summary, numeric_description, plot_hist, plot_corr_heatmap, missing_bar, download_link
 from modeling import simple_automl, is_classification
 from llm import call_grok
@@ -98,3 +99,4 @@ Sample rows:
                 st.error(f"AutoML failed: {e}")
 else:
     st.info("Upload a CSV to get started.")
+
