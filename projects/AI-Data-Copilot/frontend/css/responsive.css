@@ -1,0 +1,12 @@
+@media(max-width:900px){
+    #app{grid-template-columns:1fr}
+    .sidebar{position:relative;height:auto}
+    nav{display:grid;grid-template-columns:repeat(2,1fr)}
+    .page-header{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:620px){
+    .main-container{padding:16px}
+    nav{grid-template-columns:1fr}
+    .section-header,.model-controls{align-items:flex-start;flex-direction:column}
+    .primary-btn,.section-header button{width:100%}
+}

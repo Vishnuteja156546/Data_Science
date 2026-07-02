@@ -1,0 +1,32 @@
+#app{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.sidebar{
+    background:#0f1721;
+    border-right:1px solid var(--border-color);
+    padding:22px;
+    position:sticky;
+    top:0;
+    height:100vh;
+}
+.logo{display:flex;gap:12px;align-items:center;margin-bottom:28px}
+.logo-icon{
+    width:42px;height:42px;border-radius:8px;background:var(--accent);
+    color:#111820;display:grid;place-items:center;font-weight:800;
+}
+.logo h2{font-size:18px;margin:0}
+.logo span{font-size:12px;color:var(--text-secondary)}
+nav{display:flex;flex-direction:column;gap:8px}
+.nav-btn{
+    text-align:left;
+    border:1px solid transparent;
+    border-radius:8px;
+    background:transparent;
+    color:var(--text-secondary);
+    padding:12px;
+}
+.nav-btn.active,.nav-btn:hover{background:#172231;color:var(--text-primary);border-color:var(--border-color)}
+.main-container{padding:28px;max-width:1400px;width:100%;margin:0 auto}
+.page-header{
+    display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:24px;
+}
+.page-header h1{margin:0 0 8px;font-size:34px}
+.page-header p{margin:0;color:var(--text-secondary);max-width:760px;line-height:1.6}

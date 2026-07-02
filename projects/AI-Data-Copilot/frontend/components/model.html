@@ -1,0 +1,248 @@
+<section id="modelSection" class="card">
+
+    <div class="section-header">
+
+        <div>
+
+            <h2>AutoML & Forecasting</h2>
+
+            <p>
+
+                Train machine learning models or generate forecasts automatically.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="model-controls">
+
+        <div class="control-group">
+
+            <label for="targetSelect">
+
+                Target Column
+
+            </label>
+
+            <select id="targetSelect">
+
+                <option value="">
+
+                    Select Target
+
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="control-group">
+
+            <label for="modelMode">
+
+                Mode
+
+            </label>
+
+            <select id="modelMode">
+
+                <option value="fast">
+
+                    Fast
+
+                </option>
+
+                <option value="accurate">
+
+                    Accurate
+
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="control-group">
+
+            <label for="forecastPeriods">
+
+                Forecast Days
+
+            </label>
+
+            <input
+                id="forecastPeriods"
+                type="number"
+                min="1"
+                max="365"
+                value="14">
+
+        </div>
+
+        <button
+            id="runModelBtn"
+            class="primary-btn">
+
+            Run Model
+
+        </button>
+
+    </div>
+
+    <div
+        id="modelStatus"
+        class="status-message">
+
+    </div>
+
+    <div
+        id="problemType"
+        class="info-card">
+
+    </div>
+
+    <div class="metrics-grid">
+
+        <div class="metric-card">
+
+            <h4>Accuracy</h4>
+
+            <span id="accuracyValue">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h4>F1 Score</h4>
+
+            <span id="f1Value">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h4>RMSE</h4>
+
+            <span id="rmseValue">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h4>Method</h4>
+
+            <span id="methodValue">
+
+                --
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="chart-card">
+
+        <h3>Feature Importance</h3>
+
+        <canvas id="featureImportanceChart"></canvas>
+
+    </div>
+
+    <div class="chart-card">
+
+        <h3>Forecast</h3>
+
+        <canvas id="forecastChart"></canvas>
+
+    </div>
+
+    <div class="table-card">
+
+        <h3>Forecast Values</h3>
+
+        <div id="forecastTable">
+
+        </div>
+
+    </div>
+
+    <div class="table-card">
+
+        <h3>Model Summary</h3>
+
+        <div id="modelSummary">
+
+        </div>
+
+    </div>
+
+    <div class="table-card">
+
+        <h3>Feature Importance</h3>
+
+        <div id="featureImportanceTable">
+
+        </div>
+
+    </div>
+
+    <div class="ai-section">
+
+        <div class="section-header">
+
+            <h3>
+
+                AI Explanation
+
+            </h3>
+
+            <button
+                id="explainModelBtn"
+                class="secondary-btn">
+
+                Explain Result
+
+            </button>
+
+        </div>
+
+        <div id="modelExplanation">
+
+            <p>
+
+                AI explanation will appear here after the model finishes.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="download-section">
+
+        <button
+            id="downloadPredictionBtn"
+            class="secondary-btn">
+
+            Download Prediction Report
+
+        </button>
+
+    </div>
+
+</section>

@@ -1,0 +1,11 @@
+#dropZone{
+    display:grid;
+    place-items:center;
+    min-height:150px;
+    border:2px dashed var(--border-color);
+    border-radius:8px;
+    background:#0f1721;
+    color:var(--text-secondary);
+}
+#dropZone:hover{border-color:var(--accent);color:var(--text-primary)}
+#fileInput{display:none}

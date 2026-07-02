@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Copilot</title>
+    <meta name="description" content="AI-powered Data Analyst and AutoML Assistant">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="app">
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <div>
+                <h2>Data Copilot</h2>
+                <span>AI Data Science Assistant</span>
+            </div>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-section="uploadSection">Upload</button>
+            <button class="nav-btn" data-section="overviewSection">Overview</button>
+            <button class="nav-btn" data-section="edaSection">EDA</button>
+            <button class="nav-btn" data-section="cleanSection">Cleaning</button>
+            <button class="nav-btn" data-section="automlSection">AutoML</button>
+            <button class="nav-btn" data-section="forecastSection">Forecast</button>
+            <button class="nav-btn" data-section="chatSection">AI Chat</button>
+            <button class="nav-btn" data-section="reportSection">Reports</button>
+        </nav>
+    </aside>
+    <main class="main-container">
+        <header class="page-header">
+            <div>
+                <h1>AI Data Copilot</h1>
+                <p>Upload a CSV, TSV, or Excel dataset and automatically profile, clean, visualize, model, forecast, chat, and export reports.</p>
+            </div>
+            <button id="downloadBtn" class="primary-btn">Download Processed Dataset</button>
+        </header>
+
+        <section id="uploadSection" class="card">
+            <h2>Upload Dataset</h2>
+            <p>Supports CSV, TSV, XLSX, and XLS files.</p>
+            <label id="dropZone" for="fileInput">
+                <span>Choose or drop a dataset</span>
+                <input type="file" id="fileInput" accept=".csv,.tsv,.xlsx,.xls">
+            </label>
+            <div id="uploadStatus" class="status"></div>
+        </section>
+
+        <section id="overviewSection" class="card">
+            <h2>Dataset Overview</h2>
+            <div id="overviewCards" class="stats-grid"></div>
+        </section>
+
+        <section id="previewSection" class="card">
+            <h2>Dataset Preview</h2>
+            <div id="previewTable"></div>
+        </section>
+
+        <section id="healthSection" class="card">
+            <h2>Dataset Health</h2>
+            <div id="healthScore"></div>
+        </section>
+
+        <section id="profileSection" class="card">
+            <h2>Column Profiles</h2>
+            <div id="profileGrid" class="profile-grid"></div>
+        </section>
+
+        <section id="edaSection" class="card">
+            <h2>Exploratory Data Analysis</h2>
+            <div id="chartsContainer"></div>
+        </section>
+
+        <section id="cleanSection" class="card">
+            <div class="section-header">
+                <h2>Data Cleaning</h2>
+                <button id="cleanBtn" class="primary-btn">Clean Dataset</button>
+            </div>
+            <div id="cleanLog"></div>
+        </section>
+
+        <section id="summarySection" class="card">
+            <div class="section-header">
+                <h2>Business Insights</h2>
+                <button id="summaryBtn" class="primary-btn">Generate AI Insights</button>
+            </div>
+            <div id="summaryOutput"></div>
+        </section>
+
+        <section id="automlSection" class="card">
+            <h2>AutoML</h2>
+            <div class="model-controls">
+                <select id="targetSelect"></select>
+                <button id="runModelBtn" class="primary-btn">Run AutoML</button>
+            </div>
+            <div id="modelOutput"></div>
+        </section>
+
+        <section id="forecastSection" class="card">
+            <div class="section-header">
+                <h2>Forecast</h2>
+                <button id="runForecastBtn" class="primary-btn">Run Forecast</button>
+            </div>
+            <div class="chart-wrap medium"><canvas id="forecastChart"></canvas></div>
+            <div id="forecastTable"></div>
+        </section>
+
+        <section id="chatSection" class="card">
+            <h2>Chat With Your Dataset</h2>
+            <div id="chatHistory"></div>
+            <div class="chart-wrap medium"><canvas id="chatChart"></canvas></div>
+            <div class="chat-box">
+                <input id="chatInput" type="text" placeholder="Ask anything about your dataset...">
+                <button id="chatBtn" class="primary-btn">Send</button>
+            </div>
+        </section>
+
+        <section id="reportSection" class="card">
+            <h2>Downloads</h2>
+            <div class="download-grid">
+                <button id="processedCsvBtn">Processed CSV</button>
+                <button data-report="eda">EDA Report</button>
+                <button data-report="business">Business Report</button>
+                <button data-report="prediction">Prediction Report</button>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/api.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/upload.js"></script>
+<script src="js/automl.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

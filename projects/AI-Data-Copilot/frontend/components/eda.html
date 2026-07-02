@@ -1,0 +1,186 @@
+<section id="edaSection" class="card">
+
+    <div class="section-header">
+
+        <div>
+
+            <h2>Exploratory Data Analysis</h2>
+
+            <p>
+
+                Automatic visualization and statistical analysis
+                generated from the uploaded dataset.
+
+            </p>
+
+        </div>
+
+        <button
+            id="refreshEdaBtn"
+            class="secondary-btn">
+
+            Refresh Analysis
+
+        </button>
+
+    </div>
+
+    <div class="eda-summary">
+
+        <div class="stat-box">
+
+            <h4>Rows</h4>
+
+            <span id="edaRows">0</span>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h4>Columns</h4>
+
+            <span id="edaColumns">0</span>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h4>Missing Values</h4>
+
+            <span id="edaMissing">0</span>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h4>Duplicate Rows</h4>
+
+            <span id="edaDuplicates">0</span>
+
+        </div>
+
+    </div>
+
+    <div class="eda-grid">
+
+        <div class="chart-card">
+
+            <h3>Correlation Matrix</h3>
+
+            <canvas id="correlationChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Feature Distribution</h3>
+
+            <canvas id="distributionChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Category Distribution</h3>
+
+            <canvas id="categoryChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Scatter Plot</h3>
+
+            <canvas id="scatterChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Line Chart</h3>
+
+            <canvas id="lineChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Box Plot</h3>
+
+            <canvas id="boxChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <div class="column-analysis">
+
+        <div class="section-title">
+
+            <h3>Column Analysis</h3>
+
+        </div>
+
+        <div id="columnCards">
+
+        </div>
+
+    </div>
+
+    <div class="statistics-section">
+
+        <div class="section-title">
+
+            <h3>Statistical Summary</h3>
+
+        </div>
+
+        <div id="statisticsTable">
+
+        </div>
+
+    </div>
+
+    <div class="outlier-section">
+
+        <div class="section-title">
+
+            <h3>Missing Values & Outliers</h3>
+
+        </div>
+
+        <div id="qualityTable">
+
+        </div>
+
+    </div>
+
+    <div class="ai-insights">
+
+        <div class="section-header">
+
+            <h3>AI Generated Insights</h3>
+
+            <button
+                id="generateInsightsBtn"
+                class="primary-btn">
+
+                Generate Insights
+
+            </button>
+
+        </div>
+
+        <div id="edaInsights">
+
+            <p>
+
+                AI insights will appear here after analyzing the dataset.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>

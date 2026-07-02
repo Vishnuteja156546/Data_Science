@@ -1,0 +1,237 @@
+<section id="uploadSection" class="card">
+
+    <div class="section-header">
+
+        <div>
+
+            <h2>Upload Dataset</h2>
+
+            <p>
+
+                Upload a CSV or TSV dataset to begin automatic analysis.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div
+        id="dropZone"
+        class="drop-zone">
+
+        <div class="upload-icon">
+
+            📂
+
+        </div>
+
+        <h3>
+
+            Drag & Drop Dataset
+
+        </h3>
+
+        <p>
+
+            or click below to browse your files
+
+        </p>
+
+        <input
+            id="fileInput"
+            type="file"
+            accept=".csv,.tsv"
+            hidden>
+
+        <button
+            id="browseBtn"
+            class="primary-btn">
+
+            Browse Files
+
+        </button>
+
+        <small>
+
+            Supported formats:
+            CSV (.csv) and TSV (.tsv)
+
+        </small>
+
+    </div>
+
+    <div
+        id="selectedFileCard"
+        class="upload-card"
+        hidden>
+
+        <h3>
+
+            Selected Dataset
+
+        </h3>
+
+        <table class="info-table">
+
+            <tbody>
+
+                <tr>
+
+                    <td>File Name</td>
+
+                    <td id="selectedFileName">
+
+                        -
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>File Size</td>
+
+                    <td id="selectedFileSize">
+
+                        -
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Status</td>
+
+                    <td id="uploadStatus">
+
+                        Waiting
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div
+        id="uploadProgressContainer"
+        hidden>
+
+        <div class="progress-bar">
+
+            <div
+                id="uploadProgress"
+                class="progress-fill">
+
+            </div>
+
+        </div>
+
+        <span id="progressText">
+
+            0%
+
+        </span>
+
+    </div>
+
+    <div class="upload-actions">
+
+        <button
+            id="uploadBtn"
+            class="primary-btn">
+
+            Upload Dataset
+
+        </button>
+
+        <button
+            id="clearUploadBtn"
+            class="secondary-btn">
+
+            Clear
+
+        </button>
+
+    </div>
+
+    <div
+        id="uploadMessage"
+        class="message-box">
+
+    </div>
+
+    <div class="upload-info">
+
+        <h3>
+
+            What happens after upload?
+
+        </h3>
+
+        <ul>
+
+            <li>
+
+                Dataset profiling
+
+            </li>
+
+            <li>
+
+                Automatic column detection
+
+            </li>
+
+            <li>
+
+                Missing value analysis
+
+            </li>
+
+            <li>
+
+                Outlier detection
+
+            </li>
+
+            <li>
+
+                Correlation analysis
+
+            </li>
+
+            <li>
+
+                Automatic visualizations
+
+            </li>
+
+            <li>
+
+                AI-generated dataset summary
+
+            </li>
+
+            <li>
+
+                AutoML or Time-Series Forecasting detection
+
+            </li>
+
+            <li>
+
+                Chat with your dataset using AI
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>

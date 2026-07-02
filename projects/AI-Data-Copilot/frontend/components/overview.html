@@ -1,0 +1,270 @@
+<section id="overviewSection" class="card">
+
+    <div class="section-header">
+
+        <div>
+
+            <h2>Dataset Overview</h2>
+
+            <p>
+
+                AI-generated overview of the uploaded dataset.
+
+            </p>
+
+        </div>
+
+        <div class="overview-actions">
+
+            <button
+                id="refreshOverviewBtn"
+                class="secondary-btn">
+
+                Refresh
+
+            </button>
+
+            <button
+                id="generateSummaryBtn"
+                class="primary-btn">
+
+                Generate AI Summary
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="overview-grid">
+
+        <div class="stat-card">
+
+            <h4>Total Rows</h4>
+
+            <span id="totalRows">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Total Columns</h4>
+
+            <span id="totalColumns">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Missing Values</h4>
+
+            <span id="missingValues">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Duplicate Rows</h4>
+
+            <span id="duplicateRows">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Numeric Columns</h4>
+
+            <span id="numericColumns">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Categorical Columns</h4>
+
+            <span id="categoricalColumns">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Datetime Columns</h4>
+
+            <span id="datetimeColumns">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h4>Dataset Health</h4>
+
+            <span id="datasetHealth">
+
+                --
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="overview-panels">
+
+        <div class="panel">
+
+            <h3>Dataset Information</h3>
+
+            <table class="info-table">
+
+                <tbody>
+
+                    <tr>
+
+                        <td>File Name</td>
+
+                        <td id="datasetName">-</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>File Type</td>
+
+                        <td id="datasetType">CSV</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Detected Problem</td>
+
+                        <td id="problemType">
+
+                            Unknown
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Target Column</td>
+
+                        <td id="targetColumn">
+
+                            Not Selected
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="panel">
+
+            <h3>Dataset Preview</h3>
+
+            <div id="previewTable">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="health-card">
+
+        <h3>Dataset Quality</h3>
+
+        <div id="healthProgress">
+
+        </div>
+
+        <div id="healthDescription">
+
+            Dataset quality information will appear here.
+
+        </div>
+
+    </div>
+
+    <div class="summary-card">
+
+        <div class="section-header">
+
+            <h3>AI Dataset Summary</h3>
+
+            <button
+                id="copySummaryBtn"
+                class="secondary-btn">
+
+                Copy
+
+            </button>
+
+        </div>
+
+        <div id="datasetSummary">
+
+            Click
+            <strong>
+
+                Generate AI Summary
+
+            </strong>
+
+            to receive a business-friendly explanation of your dataset.
+
+        </div>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Recommended Next Steps</h3>
+
+        <ul id="recommendationList">
+
+            <li>
+
+                Upload a dataset to begin analysis.
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>

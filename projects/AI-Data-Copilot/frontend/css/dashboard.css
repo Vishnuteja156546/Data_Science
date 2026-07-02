@@ -1,0 +1,30 @@
+.profile-grid,.download-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px;
+}
+.profile-card,.insight-card{
+    border:1px solid var(--border-color);
+    border-radius:8px;
+    padding:16px;
+    background:#101721;
+}
+.profile-card h3{margin:0 0 8px;font-size:16px}
+.meta{color:var(--text-secondary);font-size:13px;line-height:1.6}
+.health-meter{
+    height:18px;
+    border-radius:999px;
+    background:#202937;
+    overflow:hidden;
+}
+.health-fill{height:100%;background:var(--good)}
+.list{line-height:1.8;color:var(--text-secondary)}
+.model-controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+select{
+    min-width:240px;
+    border:1px solid var(--border-color);
+    border-radius:8px;
+    background:#0f1721;
+    color:var(--text-primary);
+    padding:11px 12px;
+}

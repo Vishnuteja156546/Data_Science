@@ -1,0 +1,159 @@
+<section id="chatSection" class="card">
+
+    <div class="section-header">
+
+        <div>
+
+            <h2>AI Dataset Assistant</h2>
+
+            <p>
+                Ask questions about your uploaded dataset,
+                generate charts, understand patterns,
+                or request predictions.
+            </p>
+
+        </div>
+
+        <div class="chat-actions">
+
+            <button
+                id="clearChatBtn"
+                class="secondary-btn">
+
+                Clear Chat
+
+            </button>
+
+            <button
+                id="exportChatBtn"
+                class="secondary-btn">
+
+                Export Chat
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="suggestion-box">
+
+        <span class="suggestion-title">
+            Try asking:
+        </span>
+
+        <button class="suggestion">
+            Summarize this dataset
+        </button>
+
+        <button class="suggestion">
+            Which column has the most missing values?
+        </button>
+
+        <button class="suggestion">
+            Show sales distribution
+        </button>
+
+        <button class="suggestion">
+            Plot Revenue vs Profit
+        </button>
+
+        <button class="suggestion">
+            Best target column?
+        </button>
+
+    </div>
+
+    <div
+        id="chatHistory"
+        class="chat-history">
+
+        <div class="assistant-message">
+
+            <div class="avatar">
+                AI
+            </div>
+
+            <div class="message">
+
+                Hello 👋
+
+                Upload a dataset and ask me anything about it.
+
+                I can:
+
+                <ul>
+
+                    <li>Explain your dataset</li>
+
+                    <li>Generate charts</li>
+
+                    <li>Find trends</li>
+
+                    <li>Answer business questions</li>
+
+                    <li>Explain AutoML results</li>
+
+                    <li>Explain forecasts</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        id="chatChartContainer"
+        class="chat-chart"
+        hidden>
+
+        <h3>Generated Visualization</h3>
+
+        <canvas id="chatChart"></canvas>
+
+    </div>
+
+    <form
+        id="chatForm"
+        class="chat-input-area">
+
+        <input
+
+            id="chatInput"
+
+            type="text"
+
+            placeholder="Ask anything about your dataset..."
+
+            autocomplete="off"
+
+            required>
+
+        <button
+
+            id="chatBtn"
+
+            type="submit"
+
+            class="primary-btn">
+
+            Send
+
+        </button>
+
+    </form>
+
+    <div class="chat-footer">
+
+        <small>
+
+            AI responses are generated using your uploaded dataset.
+            Charts are computed from the dataset, not invented by the AI.
+
+        </small>
+
+    </div>
+
+</section>
